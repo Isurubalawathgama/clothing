@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="employee.css">
+    <title>Employee Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Clothify POS</h2>
+        <ul>
+            <li><a href="/employee/dashboard">Dashboard</a></li>
+            <li><a href="/employee/pos">POS System</a></li>
+            <li><a href="/employee/orders">My Orders</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Welcome, <span th:text="${user.name}"></span></h1>
+        <!-- Employee specific content -->
+    </div>
+</body>
+</html>

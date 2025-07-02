@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="auth.css">
+    <title>Clothify POS - Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Clothify POS</h1>
+        <form th:action="@{/login}" method="post">
+            <div class="form-group">
+                <input type="email" name="username" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
